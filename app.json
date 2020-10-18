@@ -1,50 +1,46 @@
 {
-  "name": "TG SMS Bomber",
-  "description": "[MsgBomberTGBot] An open-source SMS bomber bot for Telegram. Inspired by TheSpeedX's Project",
-  "logo": "https://telegra.ph/file/2c8ef3caf31680cc16a83.png",
-  "keywords": [
-    "telegram",
-    "bot",
-    "prank",
-    "fun",
-    "bomber"
-  ],
-  "repository": "https://github.com/noobvishal/MsgBomberTGBot",
-  "website": "https://github.com/noobvishal/MsgBomberTGBot",
-  "success_url": "https://github.com/noobvishal/MsgBomberTGBot",
-  "stack": "container",
+  "name": "Knowho bot",
+  "description": "A telegram bot which gather information about an indian phone number(Gather results from both Truecaller and eyecon)",
+  "repository": "https://github.com/agentnova/KnowhoBot",
+  "logo": "https://raw.githubusercontent.com/agentnova/KnowhoBot/master/logo.jpg",
+  "keywords": ["Truecaller","telegram","telegram bot","bot","pyrogram","knowho bot","information gathering"],
   "env": {
     "BOT_TOKEN": {
-      "description": "The bot-token which you can get from @Botfather",
-      "required": true
+      "description": "Your bot token from @Botfather",
+      "value": ""
     },
-    "AUTH_USERS": {
-      "description": "There is no measure to limit who can use this bot, so add userids of users authorized to use this bot",
-      "required": true
+    "API_ID": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
     },
-    "NO_BOMB_NUMS": {
-      "description": "Add numbers below who shouldn't be bombed ever",
-      "required": true
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
     },
-    "GOD_USERS": {
-      "description": "Add userids below of users who should have sudo authority over bot, i.e., have no bombing limits",
-      "required": true
+    "DB_URL": {
+      "description": "Your DATABASE url from firebase.google.com",
+      "value": ""
     },
-    "ENV": {
-      "description": "Setting this to ANYTHING will enable VARs when in ENV mode",
-      "value": "ANYTHING"
-      "required": true
+    "T_AUTH": {
+      "description": "Your Truecaller auth_id from truecaller app request headers",
+      "value": ""
+    },
+    "E_AUTH": {
+      "description": "Your Eyecon auth_id from eyecon app request headers",
+      "value": ""
+    },
+    "E_AUTH_V": {
+      "description": "Your Eyecon e_auth_v value from eyecon app request headers",
+      "value": ""
+    },
+    "E_AUTH_C": {
+      "description": "Your Eyecon e_auth_c value from eyecon app request headers",
+      "value": ""
     }
   },
-  "addons": [
-  ],
-  "buildpacks": [{
-    "url": "heroku/python"
-  }],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
+  "buildpacks": [
+    {
+      "url": "heroku/python"
     }
-  }
+  ]
 }
