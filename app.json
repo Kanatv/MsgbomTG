@@ -35,8 +35,7 @@
     },
     "ENV": {
       "description": "Your Eyecon e_auth_c value from eyecon app request headers",
-      "value": "ANYTHING"
-      "required": true
+      "value": ""
     }
   },
   "buildpacks": [
